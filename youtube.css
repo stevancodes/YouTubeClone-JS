@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+}
+
+.header img {
+  height: 90px;
+  /* margin-left: 40px;
+  margin */
+}
+
+input {
+  width: 800px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 20px;
+}
+.header .lupica {
+  height: 55px;
+  transition: 300ms;
+  cursor: pointer;
+}
+.header .lupica:hover {
+  transform: scale(1.3);
+}
+/* 
+button {
+  padding: 10px 40px;
+  background-color: white;
+  border: 1px solid grey;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: 300ms;
+} */
+/* button:hover {
+  background-color: rgba(182, 182, 182, 0.301);
+} */
+.wrapper {
+  padding: 30px 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper iframe {
+  display: none;
+  transition: all 300ms ease;
+}
+
+.wrapper iframe.active {
+  display: block;
+  height: 400px;
+}
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  justify-content: center;
+}
+
+.videowrapp {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 10px 10px;
+  padding: 10px;
+}
+/* 
+.videoImg {
+  height: 300px;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
